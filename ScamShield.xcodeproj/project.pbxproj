@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D50CAAEC2DB2D01500D0C233 /* ScamShieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAAEB2DB2D01500D0C233 /* ScamShieldApp.swift */; };
+		D50CAAEE2DB2D01500D0C233 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAAED2DB2D01500D0C233 /* ContentView.swift */; };
+		D50CAAF02DB2D01800D0C233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50CAAEF2DB2D01800D0C233 /* Assets.xcassets */; };
+		D50CAAF32DB2D01800D0C233 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50CAAF22DB2D01800D0C233 /* Preview Assets.xcassets */; };
+		D50CAAFD2DB2D01800D0C233 /* ScamShieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAAFC2DB2D01800D0C233 /* ScamShieldTests.swift */; };
+		D50CAB072DB2D01800D0C233 /* ScamShieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB062DB2D01800D0C233 /* ScamShieldUITests.swift */; };
+		D50CAB092DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB082DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D50CAAF92DB2D01800D0C233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D50CAAE02DB2D01500D0C233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50CAAE72DB2D01500D0C233;
+			remoteInfo = ScamShield;
+		};
+		D50CAB032DB2D01800D0C233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D50CAAE02DB2D01500D0C233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50CAAE72DB2D01500D0C233;
+			remoteInfo = ScamShield;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D50CAAE82DB2D01500D0C233 /* ScamShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScamShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50CAAEB2DB2D01500D0C233 /* ScamShieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldApp.swift; sourceTree = "<group>"; };
+		D50CAAED2DB2D01500D0C233 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D50CAAEF2DB2D01800D0C233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D50CAAF22DB2D01800D0C233 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D50CAAF82DB2D01800D0C233 /* ScamShieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScamShieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50CAAFC2DB2D01800D0C233 /* ScamShieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldTests.swift; sourceTree = "<group>"; };
+		D50CAB022DB2D01800D0C233 /* ScamShieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScamShieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50CAB062DB2D01800D0C233 /* ScamShieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldUITests.swift; sourceTree = "<group>"; };
+		D50CAB082DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D50CAAE52DB2D01500D0C233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50CAAF52DB2D01800D0C233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50CAAFF2DB2D01800D0C233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D50CAADF2DB2D01500D0C233 = {
+			isa = PBXGroup;
+			children = (
+				D50CAAEA2DB2D01500D0C233 /* ScamShield */,
+				D50CAAFB2DB2D01800D0C233 /* ScamShieldTests */,
+				D50CAB052DB2D01800D0C233 /* ScamShieldUITests */,
+				D50CAAE92DB2D01500D0C233 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D50CAAE92DB2D01500D0C233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D50CAAE82DB2D01500D0C233 /* ScamShield.app */,
+				D50CAAF82DB2D01800D0C233 /* ScamShieldTests.xctest */,
+				D50CAB022DB2D01800D0C233 /* ScamShieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D50CAAEA2DB2D01500D0C233 /* ScamShield */ = {
+			isa = PBXGroup;
+			children = (
+				D50CAAEB2DB2D01500D0C233 /* ScamShieldApp.swift */,
+				D50CAAED2DB2D01500D0C233 /* ContentView.swift */,
+				D50CAAEF2DB2D01800D0C233 /* Assets.xcassets */,
+				D50CAAF12DB2D01800D0C233 /* Preview Content */,
+			);
+			path = ScamShield;
+			sourceTree = "<group>";
+		};
+		D50CAAF12DB2D01800D0C233 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D50CAAF22DB2D01800D0C233 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D50CAAFB2DB2D01800D0C233 /* ScamShieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				D50CAAFC2DB2D01800D0C233 /* ScamShieldTests.swift */,
+			);
+			path = ScamShieldTests;
+			sourceTree = "<group>";
+		};
+		D50CAB052DB2D01800D0C233 /* ScamShieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D50CAB062DB2D01800D0C233 /* ScamShieldUITests.swift */,
+				D50CAB082DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift */,
+			);
+			path = ScamShieldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D50CAAE72DB2D01500D0C233 /* ScamShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50CAB0C2DB2D01800D0C233 /* Build configuration list for PBXNativeTarget "ScamShield" */;
+			buildPhases = (
+				D50CAAE42DB2D01500D0C233 /* Sources */,
+				D50CAAE52DB2D01500D0C233 /* Frameworks */,
+				D50CAAE62DB2D01500D0C233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScamShield;
+			productName = ScamShield;
+			productReference = D50CAAE82DB2D01500D0C233 /* ScamShield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D50CAAF72DB2D01800D0C233 /* ScamShieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50CAB0F2DB2D01800D0C233 /* Build configuration list for PBXNativeTarget "ScamShieldTests" */;
+			buildPhases = (
+				D50CAAF42DB2D01800D0C233 /* Sources */,
+				D50CAAF52DB2D01800D0C233 /* Frameworks */,
+				D50CAAF62DB2D01800D0C233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D50CAAFA2DB2D01800D0C233 /* PBXTargetDependency */,
+			);
+			name = ScamShieldTests;
+			productName = ScamShieldTests;
+			productReference = D50CAAF82DB2D01800D0C233 /* ScamShieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D50CAB012DB2D01800D0C233 /* ScamShieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50CAB122DB2D01800D0C233 /* Build configuration list for PBXNativeTarget "ScamShieldUITests" */;
+			buildPhases = (
+				D50CAAFE2DB2D01800D0C233 /* Sources */,
+				D50CAAFF2DB2D01800D0C233 /* Frameworks */,
+				D50CAB002DB2D01800D0C233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D50CAB042DB2D01800D0C233 /* PBXTargetDependency */,
+			);
+			name = ScamShieldUITests;
+			productName = ScamShieldUITests;
+			productReference = D50CAB022DB2D01800D0C233 /* ScamShieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D50CAAE02DB2D01500D0C233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D50CAAE72DB2D01500D0C233 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					D50CAAF72DB2D01800D0C233 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = D50CAAE72DB2D01500D0C233;
+					};
+					D50CAB012DB2D01800D0C233 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = D50CAAE72DB2D01500D0C233;
+					};
+				};
+			};
+			buildConfigurationList = D50CAAE32DB2D01500D0C233 /* Build configuration list for PBXProject "ScamShield" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D50CAADF2DB2D01500D0C233;
+			productRefGroup = D50CAAE92DB2D01500D0C233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D50CAAE72DB2D01500D0C233 /* ScamShield */,
+				D50CAAF72DB2D01800D0C233 /* ScamShieldTests */,
+				D50CAB012DB2D01800D0C233 /* ScamShieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D50CAAE62DB2D01500D0C233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50CAAF32DB2D01800D0C233 /* Preview Assets.xcassets in Resources */,
+				D50CAAF02DB2D01800D0C233 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50CAAF62DB2D01800D0C233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50CAB002DB2D01800D0C233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D50CAAE42DB2D01500D0C233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50CAAEE2DB2D01500D0C233 /* ContentView.swift in Sources */,
+				D50CAAEC2DB2D01500D0C233 /* ScamShieldApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50CAAF42DB2D01800D0C233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50CAAFD2DB2D01800D0C233 /* ScamShieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50CAAFE2DB2D01800D0C233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50CAB072DB2D01800D0C233 /* ScamShieldUITests.swift in Sources */,
+				D50CAB092DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D50CAAFA2DB2D01800D0C233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D50CAAE72DB2D01500D0C233 /* ScamShield */;
+			targetProxy = D50CAAF92DB2D01800D0C233 /* PBXContainerItemProxy */;
+		};
+		D50CAB042DB2D01800D0C233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D50CAAE72DB2D01500D0C233 /* ScamShield */;
+			targetProxy = D50CAB032DB2D01800D0C233 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D50CAB0A2DB2D01800D0C233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D50CAB0B2DB2D01800D0C233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D50CAB0D2DB2D01800D0C233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScamShield/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D50CAB0E2DB2D01800D0C233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScamShield/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D50CAB102DB2D01800D0C233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScamShield.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScamShield";
+			};
+			name = Debug;
+		};
+		D50CAB112DB2D01800D0C233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScamShield.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScamShield";
+			};
+			name = Release;
+		};
+		D50CAB132DB2D01800D0C233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScamShield;
+			};
+			name = Debug;
+		};
+		D50CAB142DB2D01800D0C233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScamShield;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D50CAAE32DB2D01500D0C233 /* Build configuration list for PBXProject "ScamShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50CAB0A2DB2D01800D0C233 /* Debug */,
+				D50CAB0B2DB2D01800D0C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50CAB0C2DB2D01800D0C233 /* Build configuration list for PBXNativeTarget "ScamShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50CAB0D2DB2D01800D0C233 /* Debug */,
+				D50CAB0E2DB2D01800D0C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50CAB0F2DB2D01800D0C233 /* Build configuration list for PBXNativeTarget "ScamShieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50CAB102DB2D01800D0C233 /* Debug */,
+				D50CAB112DB2D01800D0C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50CAB122DB2D01800D0C233 /* Build configuration list for PBXNativeTarget "ScamShieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50CAB132DB2D01800D0C233 /* Debug */,
+				D50CAB142DB2D01800D0C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D50CAAE02DB2D01500D0C233 /* Project object */;
+}
