@@ -43,7 +43,7 @@ class NumberDetailsViewModel: ObservableObject {
     }
 
     func loadNumberDetails(for number: String) {
-        guard let url = URL(string: "http://localhost:3000/report/\(number)") else {
+        guard let url = URL(string: "http://169.254.140.32:3000/report/\(number)") else {
             self.errorMessage = "Invalid URL"
             return
         }
