@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ScamShield
-//
-//  Created by Theniya Kumarasinghe on 2025-04-18.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -24,3 +17,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

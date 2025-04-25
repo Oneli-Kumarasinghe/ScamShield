@@ -14,6 +14,28 @@
 		D50CAAFD2DB2D01800D0C233 /* ScamShieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAAFC2DB2D01800D0C233 /* ScamShieldTests.swift */; };
 		D50CAB072DB2D01800D0C233 /* ScamShieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB062DB2D01800D0C233 /* ScamShieldUITests.swift */; };
 		D50CAB092DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB082DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift */; };
+		D50CAB162DB3DB7900D0C233 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB152DB3DB7900D0C233 /* LoginView.swift */; };
+		D50CAB182DB3DC7900D0C233 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB172DB3DC7900D0C233 /* LoginModel.swift */; };
+		D50CAB1C2DB3DE1C00D0C233 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB1B2DB3DE1C00D0C233 /* SignUpView.swift */; };
+		D50CAB1E2DB3DEDC00D0C233 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB1D2DB3DEDC00D0C233 /* SignUpModel.swift */; };
+		D50CAB222DB3E08800D0C233 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB212DB3E08800D0C233 /* DashboardView.swift */; };
+		D50CAB242DB3E1C500D0C233 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB232DB3E1C500D0C233 /* DashboardModel.swift */; };
+		D50CAB262DB3ECC100D0C233 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB252DB3ECC100D0C233 /* AlertView.swift */; };
+		D50CAB282DB3ECDE00D0C233 /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB272DB3ECDE00D0C233 /* AlertModel.swift */; };
+		D50CAB2A2DB3FCED00D0C233 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB292DB3FCED00D0C233 /* RecordView.swift */; };
+		D50CAB2C2DB3FD0A00D0C233 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB2B2DB3FD0A00D0C233 /* RecordModel.swift */; };
+		D50CAB2E2DB4C63B00D0C233 /* ReportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB2D2DB4C63B00D0C233 /* ReportingView.swift */; };
+		D50CAB302DB4C65800D0C233 /* ReportingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB2F2DB4C65800D0C233 /* ReportingModel.swift */; };
+		D50CAB322DB4DECE00D0C233 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB312DB4DECE00D0C233 /* LandingView.swift */; };
+		D50CAB342DB4DF5400D0C233 /* NumberDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB332DB4DF5400D0C233 /* NumberDetailsView.swift */; };
+		D50CAB362DB4DF6E00D0C233 /* NumberDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB352DB4DF6E00D0C233 /* NumberDetailsModel.swift */; };
+		D50CAB382DB5225400D0C233 /* SriLankaEmergencyDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB372DB5225400D0C233 /* SriLankaEmergencyDialView.swift */; };
+		D50CAB3A2DB522A300D0C233 /* SriLankaEmergencyDialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB392DB522A300D0C233 /* SriLankaEmergencyDialModel.swift */; };
+		D50CAB3C2DB52B6100D0C233 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */; };
+		D51E96F32DB768CE003CAE49 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E96F22DB768CE003CAE49 /* TabIcon.swift */; };
+		D5F5783D2DB82D8200F81F18 /* TestNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5783C2DB82D8200F81F18 /* TestNavView.swift */; };
+		D5FB83842DB9EF6900D4A60B /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FB83832DB9EF6900D4A60B /* CallDirectoryHandler.swift */; };
+		D5FB83882DB9EF6900D4A60B /* MyAppCallDirectory.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +53,28 @@
 			remoteGlobalIDString = D50CAAE72DB2D01500D0C233;
 			remoteInfo = ScamShield;
 		};
+		D5FB83862DB9EF6900D4A60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D50CAAE02DB2D01500D0C233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5FB83802DB9EF6800D4A60B;
+			remoteInfo = MyAppCallDirectory;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5FB83892DB9EF6900D4A60B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5FB83882DB9EF6900D4A60B /* MyAppCallDirectory.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D50CAAE82DB2D01500D0C233 /* ScamShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScamShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +87,29 @@
 		D50CAB022DB2D01800D0C233 /* ScamShieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScamShieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50CAB062DB2D01800D0C233 /* ScamShieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldUITests.swift; sourceTree = "<group>"; };
 		D50CAB082DB2D01800D0C233 /* ScamShieldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D50CAB152DB3DB7900D0C233 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D50CAB172DB3DC7900D0C233 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D50CAB1B2DB3DE1C00D0C233 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D50CAB1D2DB3DEDC00D0C233 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		D50CAB212DB3E08800D0C233 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		D50CAB232DB3E1C500D0C233 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		D50CAB252DB3ECC100D0C233 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		D50CAB272DB3ECDE00D0C233 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
+		D50CAB292DB3FCED00D0C233 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		D50CAB2B2DB3FD0A00D0C233 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		D50CAB2D2DB4C63B00D0C233 /* ReportingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingView.swift; sourceTree = "<group>"; };
+		D50CAB2F2DB4C65800D0C233 /* ReportingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingModel.swift; sourceTree = "<group>"; };
+		D50CAB312DB4DECE00D0C233 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		D50CAB332DB4DF5400D0C233 /* NumberDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberDetailsView.swift; sourceTree = "<group>"; };
+		D50CAB352DB4DF6E00D0C233 /* NumberDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberDetailsModel.swift; sourceTree = "<group>"; };
+		D50CAB372DB5225400D0C233 /* SriLankaEmergencyDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SriLankaEmergencyDialView.swift; sourceTree = "<group>"; };
+		D50CAB392DB522A300D0C233 /* SriLankaEmergencyDialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SriLankaEmergencyDialModel.swift; sourceTree = "<group>"; };
+		D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D51E96F22DB768CE003CAE49 /* TabIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIcon.swift; sourceTree = "<group>"; };
+		D5F5783C2DB82D8200F81F18 /* TestNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavView.swift; sourceTree = "<group>"; };
+		D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyAppCallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FB83832DB9EF6900D4A60B /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		D5FB83852DB9EF6900D4A60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +134,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5FB837E2DB9EF6800D4A60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +150,7 @@
 				D50CAAEA2DB2D01500D0C233 /* ScamShield */,
 				D50CAAFB2DB2D01800D0C233 /* ScamShieldTests */,
 				D50CAB052DB2D01800D0C233 /* ScamShieldUITests */,
+				D5FB83822DB9EF6800D4A60B /* MyAppCallDirectory */,
 				D50CAAE92DB2D01500D0C233 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +161,7 @@
 				D50CAAE82DB2D01500D0C233 /* ScamShield.app */,
 				D50CAAF82DB2D01800D0C233 /* ScamShieldTests.xctest */,
 				D50CAB022DB2D01800D0C233 /* ScamShieldUITests.xctest */,
+				D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +169,9 @@
 		D50CAAEA2DB2D01500D0C233 /* ScamShield */ = {
 			isa = PBXGroup;
 			children = (
+				D51E96F22DB768CE003CAE49 /* TabIcon.swift */,
+				D50CAB202DB3DFD700D0C233 /* View */,
+				D50CAB1F2DB3DFC300D0C233 /* Model */,
 				D50CAAEB2DB2D01500D0C233 /* ScamShieldApp.swift */,
 				D50CAAED2DB2D01500D0C233 /* ContentView.swift */,
 				D50CAAEF2DB2D01800D0C233 /* Assets.xcassets */,
@@ -127,6 +205,48 @@
 			path = ScamShieldUITests;
 			sourceTree = "<group>";
 		};
+		D50CAB1F2DB3DFC300D0C233 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D50CAB1D2DB3DEDC00D0C233 /* SignUpModel.swift */,
+				D50CAB392DB522A300D0C233 /* SriLankaEmergencyDialModel.swift */,
+				D50CAB172DB3DC7900D0C233 /* LoginModel.swift */,
+				D50CAB232DB3E1C500D0C233 /* DashboardModel.swift */,
+				D50CAB272DB3ECDE00D0C233 /* AlertModel.swift */,
+				D50CAB2B2DB3FD0A00D0C233 /* RecordModel.swift */,
+				D50CAB2F2DB4C65800D0C233 /* ReportingModel.swift */,
+				D50CAB352DB4DF6E00D0C233 /* NumberDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D50CAB202DB3DFD700D0C233 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D50CAB152DB3DB7900D0C233 /* LoginView.swift */,
+				D50CAB312DB4DECE00D0C233 /* LandingView.swift */,
+				D50CAB1B2DB3DE1C00D0C233 /* SignUpView.swift */,
+				D50CAB212DB3E08800D0C233 /* DashboardView.swift */,
+				D50CAB252DB3ECC100D0C233 /* AlertView.swift */,
+				D50CAB292DB3FCED00D0C233 /* RecordView.swift */,
+				D50CAB2D2DB4C63B00D0C233 /* ReportingView.swift */,
+				D50CAB332DB4DF5400D0C233 /* NumberDetailsView.swift */,
+				D50CAB372DB5225400D0C233 /* SriLankaEmergencyDialView.swift */,
+				D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */,
+				D5F5783C2DB82D8200F81F18 /* TestNavView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5FB83822DB9EF6800D4A60B /* MyAppCallDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				D5FB83832DB9EF6900D4A60B /* CallDirectoryHandler.swift */,
+				D5FB83852DB9EF6900D4A60B /* Info.plist */,
+			);
+			path = MyAppCallDirectory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +257,12 @@
 				D50CAAE42DB2D01500D0C233 /* Sources */,
 				D50CAAE52DB2D01500D0C233 /* Frameworks */,
 				D50CAAE62DB2D01500D0C233 /* Resources */,
+				D5FB83892DB9EF6900D4A60B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5FB83872DB9EF6900D4A60B /* PBXTargetDependency */,
 			);
 			name = ScamShield;
 			productName = ScamShield;
@@ -183,6 +305,23 @@
 			productReference = D50CAB022DB2D01800D0C233 /* ScamShieldUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D5FB83802DB9EF6800D4A60B /* MyAppCallDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FB838C2DB9EF6900D4A60B /* Build configuration list for PBXNativeTarget "MyAppCallDirectory" */;
+			buildPhases = (
+				D5FB837D2DB9EF6800D4A60B /* Sources */,
+				D5FB837E2DB9EF6800D4A60B /* Frameworks */,
+				D5FB837F2DB9EF6800D4A60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAppCallDirectory;
+			productName = MyAppCallDirectory;
+			productReference = D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +343,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = D50CAAE72DB2D01500D0C233;
 					};
+					D5FB83802DB9EF6800D4A60B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = D50CAAE32DB2D01500D0C233 /* Build configuration list for PBXProject "ScamShield" */;
@@ -222,6 +364,7 @@
 				D50CAAE72DB2D01500D0C233 /* ScamShield */,
 				D50CAAF72DB2D01800D0C233 /* ScamShieldTests */,
 				D50CAB012DB2D01800D0C233 /* ScamShieldUITests */,
+				D5FB83802DB9EF6800D4A60B /* MyAppCallDirectory */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +393,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5FB837F2DB9EF6800D4A60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,7 +407,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50CAB2E2DB4C63B00D0C233 /* ReportingView.swift in Sources */,
+				D50CAB242DB3E1C500D0C233 /* DashboardModel.swift in Sources */,
+				D5F5783D2DB82D8200F81F18 /* TestNavView.swift in Sources */,
+				D50CAB162DB3DB7900D0C233 /* LoginView.swift in Sources */,
+				D51E96F32DB768CE003CAE49 /* TabIcon.swift in Sources */,
+				D50CAB262DB3ECC100D0C233 /* AlertView.swift in Sources */,
+				D50CAB302DB4C65800D0C233 /* ReportingModel.swift in Sources */,
+				D50CAB3A2DB522A300D0C233 /* SriLankaEmergencyDialModel.swift in Sources */,
+				D50CAB2A2DB3FCED00D0C233 /* RecordView.swift in Sources */,
+				D50CAB322DB4DECE00D0C233 /* LandingView.swift in Sources */,
+				D50CAB1C2DB3DE1C00D0C233 /* SignUpView.swift in Sources */,
+				D50CAB182DB3DC7900D0C233 /* LoginModel.swift in Sources */,
+				D50CAB222DB3E08800D0C233 /* DashboardView.swift in Sources */,
+				D50CAB1E2DB3DEDC00D0C233 /* SignUpModel.swift in Sources */,
+				D50CAB3C2DB52B6100D0C233 /* ProfileView.swift in Sources */,
+				D50CAB2C2DB3FD0A00D0C233 /* RecordModel.swift in Sources */,
+				D50CAB342DB4DF5400D0C233 /* NumberDetailsView.swift in Sources */,
+				D50CAB382DB5225400D0C233 /* SriLankaEmergencyDialView.swift in Sources */,
+				D50CAB362DB4DF6E00D0C233 /* NumberDetailsModel.swift in Sources */,
 				D50CAAEE2DB2D01500D0C233 /* ContentView.swift in Sources */,
+				D50CAB282DB3ECDE00D0C233 /* AlertModel.swift in Sources */,
 				D50CAAEC2DB2D01500D0C233 /* ScamShieldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +449,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5FB837D2DB9EF6800D4A60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FB83842DB9EF6900D4A60B /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +469,11 @@
 			isa = PBXTargetDependency;
 			target = D50CAAE72DB2D01500D0C233 /* ScamShield */;
 			targetProxy = D50CAB032DB2D01800D0C233 /* PBXContainerItemProxy */;
+		};
+		D5FB83872DB9EF6900D4A60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5FB83802DB9EF6800D4A60B /* MyAppCallDirectory */;
+			targetProxy = D5FB83862DB9EF6900D4A60B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,11 +595,13 @@
 		D50CAB0D2DB2D01800D0C233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScamShield/Preview Content\"";
+				DEVELOPMENT_TEAM = G2K982JDU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +609,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,11 +626,13 @@
 		D50CAB0E2DB2D01800D0C233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScamShield/Preview Content\"";
+				DEVELOPMENT_TEAM = G2K982JDU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -452,6 +640,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,6 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShieldUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,6 +717,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShieldUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +725,60 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ScamShield;
+			};
+			name = Release;
+		};
+		D5FB838A2DB9EF6900D4A60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2K982JDU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAppCallDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyAppCallDirectory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShield.MyAppCallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5FB838B2DB9EF6900D4A60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2K982JDU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAppCallDirectory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyAppCallDirectory;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = T.ScamShield.MyAppCallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -572,6 +817,15 @@
 			buildConfigurations = (
 				D50CAB132DB2D01800D0C233 /* Debug */,
 				D50CAB142DB2D01800D0C233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5FB838C2DB9EF6900D4A60B /* Build configuration list for PBXNativeTarget "MyAppCallDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FB838A2DB9EF6900D4A60B /* Debug */,
+				D5FB838B2DB9EF6900D4A60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
