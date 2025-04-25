@@ -96,7 +96,7 @@ class NumberDetailsViewModel: ObservableObject {
             return
         }
 
-        let sharedDefaults = UserDefaults(suiteName: "group.com.your.bundle") 
+        let sharedDefaults = UserDefaults(suiteName: "group.com.T.scamshield")
         var blockedNumbers = sharedDefaults?.array(forKey: "BlockedNumbers") as? [Int64] ?? []
 
         if !blockedNumbers.contains(number) {
