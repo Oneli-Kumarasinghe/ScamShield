@@ -128,25 +128,6 @@ struct LoginView: View {
 
                 Spacer()
 
-                // Optional sign-up flow (commented)
-            
-              /*  VStack {
-                    Text("Don't have an account?")
-                        .foregroundColor(.gray)
-
-                    NavigationLink {
-                        SignUpView()
-                    } label: {
-                        Text("Sign up")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.blue)
-                    }
-                    .font(.footnote)
-                    .padding(.bottom, 16)
-                }
-*/
-                
-
             }
             .padding(.top)
 

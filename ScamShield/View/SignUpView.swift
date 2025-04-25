@@ -147,11 +147,11 @@ struct SignUpView: View {
             }
             .padding(.top)
             
-            // Hidden navigation link to LoginView only
+            
             .background(
                 NavigationLink(destination: LoginView(), isActive: $viewModel.showLogin) { EmptyView() }
             )
-            // Remove the NavigationLink to DashboardView
+            
         }
     }
 }

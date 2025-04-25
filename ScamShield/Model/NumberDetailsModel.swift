@@ -1,4 +1,5 @@
 import Foundation
+import CallKit
 import Combine
 
 // MARK: - Existing Model Used by Views (RE-ADDED)
@@ -86,6 +87,35 @@ class NumberDetailsViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
+    
+    func blockNumber() {
+        let cleanedNumber = phoneNumber.filter("0123456789".contains)
+
+        guard let number = Int64(cleanedNumber) else {
+            print("Invalid phone number format")
+            return
+        }
+
+        let sharedDefaults = UserDefaults(suiteName: "group.com.your.bundle") // Replace this with your App Group ID
+        var blockedNumbers = sharedDefaults?.array(forKey: "BlockedNumbers") as? [Int64] ?? []
+
+        if !blockedNumbers.contains(number) {
+            blockedNumbers.append(number)
+            sharedDefaults?.set(blockedNumbers, forKey: "BlockedNumbers")
+            print("Number added to blocked list.")
+        } else {
+            print("Number already blocked.")
+        }
+
+        CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "T.ScamShield.MyAppCallDirectory") { error in
+            if let error = error {
+                print("Error reloading extension: \(error.localizedDescription)")
+            } else {
+                print("Call directory extension reloaded successfully")
+            }
+        }
+    }
+
 
     private func generateMockSpamActivity() -> [SpamActivity] {
         let calendar = Calendar.current
@@ -95,10 +125,8 @@ class NumberDetailsViewModel: ObservableObject {
         }.reversed()
     }
 
-    func blockNumber() {
-        print("Block number: \(phoneNumber)")
-    }
 }
+
 
 // MARK: - ViewModel for Report Submission (RE-ADDED)
 class ReportFormViewModel: ObservableObject {
@@ -118,6 +146,8 @@ class ReportFormViewModel: ObservableObject {
             .eraseToAnyPublisher()
     }
 }
+
+
 
 // MARK: - API Response Struct
 struct NumberDetailsResponse: Codable {

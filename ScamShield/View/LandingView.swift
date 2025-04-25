@@ -59,14 +59,25 @@ struct ScamShieldOnboarding: View {
                                 
                                 Spacer()
                                 
-                                // Navigation to LoginView
-                                NavigationLink(destination: LoginView()) {
-                                    Text("Get Started!")
-                                        .font(.system(size: 17, weight: .medium))
-                                        .foregroundColor(.black)
-                                        .frame(width: 180, height: 45)
-                                        .background(Color(white: 0.9))
-                                        .cornerRadius(22.5)
+                                // Navigation buttons - Login and Sign up
+                                VStack(spacing: 16) {
+                                    NavigationLink(destination: LoginView()) {
+                                        Text("Log In")
+                                            .font(.system(size: 17, weight: .medium))
+                                            .foregroundColor(.black)
+                                            .frame(width: 180, height: 45)
+                                            .background(Color(white: 0.9))
+                                            .cornerRadius(22.5)
+                                    }
+                                    
+                                    NavigationLink(destination: SignUpView()) {
+                                        Text("Sign Up")
+                                            .font(.system(size: 17, weight: .medium))
+                                            .foregroundColor(Color(red: 0.13, green: 0.36, blue: 0.37))
+                                            .frame(width: 180, height: 45)
+                                            .background(Color.white)
+                                            .cornerRadius(22.5)
+                                    }
                                 }
                                 .padding(.bottom, 60)
                             }
@@ -79,7 +90,7 @@ struct ScamShieldOnboarding: View {
     }
 }
 
-// Custom curved shape for bottom section
+
 struct ExactWaveShape: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
@@ -105,5 +116,3 @@ struct ScamShieldOnboarding_Previews: PreviewProvider {
             .previewDevice("iPhone 14 Pro")
     }
 }
-
-

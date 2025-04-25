@@ -11,10 +11,10 @@ struct CallRecordingUploadView: View {
         NavigationStack {
             ZStack(alignment: .bottom) {
                 VStack(spacing: 0) {
-                    // Custom Header (now using viewModel.uiConfig)
+                    
                     VStack(alignment: .leading, spacing: 12) {
                         HStack {
-                            // Back button
+                          
                             Button(action: {
                                 presentationMode.wrappedValue.dismiss()
                             }) {
@@ -63,7 +63,7 @@ struct CallRecordingUploadView: View {
                     ScrollView {
                         VStack(spacing: 16) {
                             if viewModel.filteredRecordings.isEmpty {
-                                // Empty state using viewModel.uiConfig
+                               
                                 VStack(spacing: 20) {
                                     Image(systemName: viewModel.uiConfig.emptyState.iconName)
                                         .font(.system(size: viewModel.uiConfig.emptyState.iconSize))

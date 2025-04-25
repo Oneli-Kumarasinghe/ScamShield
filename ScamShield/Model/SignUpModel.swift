@@ -9,8 +9,7 @@ class SignUpViewModel: ObservableObject {
     @Published var isConfirmPasswordVisible: Bool = false
     @Published var showLogin: Bool = false
     
-    // You can remove this if you no longer need Dashboard navigation
-    // @Published var showDashboard: Bool = false
+    
 
     func signUp() {
         // Your sign-up logic here

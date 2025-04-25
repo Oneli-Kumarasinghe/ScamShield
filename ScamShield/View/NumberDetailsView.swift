@@ -173,7 +173,7 @@ struct NumberDetailsView: View {
             }
             .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.all))
             
-            // Loading and error overlays
+           
             if viewModel.isLoading {
                 ProgressView()
                     .scaleEffect(1.5)
@@ -236,7 +236,7 @@ struct NumberDetailsView: View {
             ReportFormView(viewModel: ReportFormViewModel(phoneNumber: viewModel.phoneNumber))
         }
         .onAppear {
-            // Reload data when view appears
+           
             viewModel.loadData()
         }
     }

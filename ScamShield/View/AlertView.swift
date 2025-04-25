@@ -10,7 +10,7 @@ struct AlertView: View {
         NavigationStack {
             ZStack(alignment: .bottom) {
                 VStack(spacing: 0) {
-                    // Show content based on selected tab
+                    
                     if selectedTab == .profile {
                         ThemedProfileView()
                     } else if selectedTab == .home {
@@ -30,7 +30,8 @@ struct AlertView: View {
                             isSelected: selectedTab == .profile
                         ) {
                             if selectedTab != .profile {
-                                dismiss() // Dismiss alert view when switching to profile
+                                dismiss()
+                                
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                                     NotificationCenter.default.post(
                                         name: Notification.Name("SwitchToTab"),
@@ -47,7 +48,7 @@ struct AlertView: View {
                             isSelected: selectedTab == .home
                         ) {
                             if selectedTab != .home {
-                                dismiss() // Dismiss alert view
+                                dismiss()
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                                     NotificationCenter.default.post(
                                         name: Notification.Name("SwitchToTab"),
@@ -64,7 +65,7 @@ struct AlertView: View {
                             isSelected: selectedTab == .info
                         ) {
                             if selectedTab != .info {
-                                dismiss() // Dismiss alert view
+                                dismiss()
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                                     NotificationCenter.default.post(
                                         name: Notification.Name("SwitchToTab"),
@@ -93,7 +94,7 @@ struct AlertView: View {
             VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     Button(action: {
-                        dismiss() // Go back to dashboard
+                        dismiss()
                     }) {
                         Image(systemName: "chevron.left")
                     }
@@ -120,7 +121,7 @@ struct AlertView: View {
             // Buttons
             ScrollView {
                 VStack(spacing: 16) {
-                    // Dial Help - Using the working button style from EmergencyActionsView
+                    
                     NavigationLink(destination: SriLankaEmergencyDialView()) {
                         HStack {
                             Circle()
@@ -146,7 +147,7 @@ struct AlertView: View {
                         )
                     }
 
-                    // Record - Using the working button style
+                    
                     NavigationLink(destination: CallRecordingUploadView()) {
                         HStack {
                             Circle()
@@ -172,7 +173,7 @@ struct AlertView: View {
                         )
                     }
 
-                    // Report Only - Using the working button style
+                    
                     NavigationLink(destination: ReportingView()) {
                         HStack {
                             Circle()
@@ -250,27 +251,6 @@ struct AlertView: View {
         }
     }
 }
-
-// MARK: - TabIcon
-/*struct TabIcon: View {
-    let label: String
-    let icon: String
-    let isSelected: Bool
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            VStack(spacing: 4) {
-                Image(systemName: icon)
-                    .font(.system(size: 22))
-                Text(label)
-                    .font(.caption)
-            }
-            .foregroundColor(isSelected ? .white : .white.opacity(0.6))
-            .frame(maxWidth: .infinity)
-        }
-    }
-}*/
 
 // MARK: - Preview
 struct AlertView_Previews: PreviewProvider {

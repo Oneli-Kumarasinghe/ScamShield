@@ -33,8 +33,7 @@
 		D50CAB3A2DB522A300D0C233 /* SriLankaEmergencyDialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB392DB522A300D0C233 /* SriLankaEmergencyDialModel.swift */; };
 		D50CAB3C2DB52B6100D0C233 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */; };
 		D51E96F32DB768CE003CAE49 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E96F22DB768CE003CAE49 /* TabIcon.swift */; };
-		D5F5783D2DB82D8200F81F18 /* TestNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5783C2DB82D8200F81F18 /* TestNavView.swift */; };
-		D5FB83842DB9EF6900D4A60B /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FB83832DB9EF6900D4A60B /* CallDirectoryHandler.swift */; };
+		D5FB83842DB9EF6900D4A60B /* BlockerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FB83832DB9EF6900D4A60B /* BlockerExtension.swift */; };
 		D5FB83882DB9EF6900D4A60B /* MyAppCallDirectory.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -106,9 +105,8 @@
 		D50CAB392DB522A300D0C233 /* SriLankaEmergencyDialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SriLankaEmergencyDialModel.swift; sourceTree = "<group>"; };
 		D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D51E96F22DB768CE003CAE49 /* TabIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIcon.swift; sourceTree = "<group>"; };
-		D5F5783C2DB82D8200F81F18 /* TestNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavView.swift; sourceTree = "<group>"; };
 		D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyAppCallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5FB83832DB9EF6900D4A60B /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		D5FB83832DB9EF6900D4A60B /* BlockerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerExtension.swift; sourceTree = "<group>"; };
 		D5FB83852DB9EF6900D4A60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,7 +231,6 @@
 				D50CAB332DB4DF5400D0C233 /* NumberDetailsView.swift */,
 				D50CAB372DB5225400D0C233 /* SriLankaEmergencyDialView.swift */,
 				D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */,
-				D5F5783C2DB82D8200F81F18 /* TestNavView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,7 +238,7 @@
 		D5FB83822DB9EF6800D4A60B /* MyAppCallDirectory */ = {
 			isa = PBXGroup;
 			children = (
-				D5FB83832DB9EF6900D4A60B /* CallDirectoryHandler.swift */,
+				D5FB83832DB9EF6900D4A60B /* BlockerExtension.swift */,
 				D5FB83852DB9EF6900D4A60B /* Info.plist */,
 			);
 			path = MyAppCallDirectory;
@@ -409,7 +406,6 @@
 			files = (
 				D50CAB2E2DB4C63B00D0C233 /* ReportingView.swift in Sources */,
 				D50CAB242DB3E1C500D0C233 /* DashboardModel.swift in Sources */,
-				D5F5783D2DB82D8200F81F18 /* TestNavView.swift in Sources */,
 				D50CAB162DB3DB7900D0C233 /* LoginView.swift in Sources */,
 				D51E96F32DB768CE003CAE49 /* TabIcon.swift in Sources */,
 				D50CAB262DB3ECC100D0C233 /* AlertView.swift in Sources */,
@@ -453,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5FB83842DB9EF6900D4A60B /* CallDirectoryHandler.swift in Sources */,
+				D5FB83842DB9EF6900D4A60B /* BlockerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

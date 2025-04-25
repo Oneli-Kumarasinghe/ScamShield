@@ -11,15 +11,14 @@ struct DashboardView: View {
     @State private var showAlertView = false
     @State private var selectedTab: TabType = .home
     
-    let user: User?  // Make this optional
-        
+    let user: User?
         init(user: User? = nil) {
             self.user = user
         }
     
     var filteredCalls: [CallLog] {
         let calendar = Calendar.current
-        let dateFilteredCalls = viewModel.recentCalls.filter {
+        let dateFilteredCalls =  viewModel.recentCalls.filter {
             calendar.isDate($0.date, inSameDayAs: selectedDate)
         }
 
@@ -33,9 +32,9 @@ struct DashboardView: View {
     var body: some View {
         NavigationStack {
             ZStack(alignment: .bottom) {
-                // Main Content
+                
                 VStack(spacing: 0) {
-                    // Show different views based on selected tab
+                   
                     if selectedTab == .profile {
                         ThemedProfileView(user: user)
                     } else if selectedTab == .home {
@@ -174,7 +173,7 @@ struct DashboardView: View {
                                         }
                                     }
 
-                                    // Trigger Search
+                                
                                     Button {
                                         numberDetailsViewModel.loadNumberDetails(for: searchText)
                                         navigateToDetails = true
@@ -209,7 +208,7 @@ struct DashboardView: View {
                         }
 
                         HStack(spacing: 16) {
-                            // Simple Report Button
+                
                             VStack(spacing: 6) {
                                 Image(systemName: "doc.text")
                                     .font(.title2)
@@ -226,7 +225,7 @@ struct DashboardView: View {
                                 showReportingView = true
                             }
                             
-                            // Simple Alert Button
+                            
                             VStack(spacing: 6) {
                                 Image(systemName: "exclamationmark.triangle")
                                     .font(.title2)

@@ -34,7 +34,7 @@ struct ReportingView: View {
                             
                             
                             
-                            // Balance the layout with an invisible element
+                            
                             Image(systemName: "chevron.left")
                                 .opacity(0)
                         }
@@ -53,7 +53,7 @@ struct ReportingView: View {
                     .cornerRadius(24)
                     .padding(.horizontal)
                     
-                    // Form Content
+                    
                     ScrollView {
                         VStack(spacing: 16) {
                             // Phone Number Section
@@ -246,7 +246,7 @@ struct ReportingView: View {
                             .disabled(!isValidToSubmit || viewModel.isSubmitting)
                             .padding(.horizontal)
                             .padding(.top, 8)
-                            .padding(.bottom, 20) // Reduced bottom padding since tab bar is removed
+                            .padding(.bottom, 20)
                             
                             if let error = viewModel.validationError {
                                 Text(error)
@@ -337,7 +337,7 @@ struct SafeImagePicker: UIViewControllerRepresentable {
 
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
             if let image = info[.originalImage] as? UIImage {
-                // Create a reduced copy to prevent memory issues
+                
                 let maxSize: CGFloat = 1200
                 let scale = min(maxSize/image.size.width, maxSize/image.size.height)
                 let newSize = CGSize(width: image.size.width * scale, height: image.size.height * scale)

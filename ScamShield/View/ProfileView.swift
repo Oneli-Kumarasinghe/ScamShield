@@ -2,15 +2,14 @@ import Foundation
 import SwiftUI
 
 struct ThemedProfileView: View {
-    // User data
+    
     let user: User?
     
     init(user: User? = nil) {
         self.user = user
     }
     
-    // We don't need these state variables anymore as we'll use user data
-    // but keeping them as fallbacks when user is nil
+    
     @State private var username = "Alex Johnson"
     @State private var email = "alex.johnson@example.com"
     @State private var phoneNumber = "+94 77 123 4567"
@@ -93,7 +92,7 @@ struct ThemedProfileView: View {
                 Text("Are you sure you want to log out?")
             }
             .onAppear {
-                // If user data is available, update the state variables
+                
                 if let user = user {
                     username = user.username
                     email = user.email
@@ -140,7 +139,7 @@ struct ThemedProfileView: View {
                 .padding(.horizontal, 4)
             
             VStack(spacing: 0) {
-                // Use user data if available, otherwise fall back to state variables
+                
                 infoRow(icon: "person.fill", title: "Name", value: user?.username ?? username)
                 
                 Divider()
@@ -316,7 +315,7 @@ struct EditProfileView: View {
                             .foregroundColor(primaryColor)
                         
                         Button("Change Photo") {
-                            // Handle photo change
+                            
                         }
                         .font(.subheadline)
                         .foregroundColor(primaryColor)
@@ -410,7 +409,7 @@ struct ThemedProfileView_Previews: PreviewProvider {
             ThemedProfileView(user: mockUser)
                 .previewDisplayName("With User Data")
                 
-            ThemedProfileView() // Preview with no user (fallback data)
+            ThemedProfileView() 
                 .previewDisplayName("No User Data")
         }
     }
