@@ -399,7 +399,7 @@ class RecordingsViewModel: ObservableObject {
     func loadRecordings() {
         isLoading = true
         
-        // First try to load from API
+        
         apiService.fetchRecordings()
             .receive(on: DispatchQueue.main)
             .sink(
@@ -419,15 +419,15 @@ class RecordingsViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    /// Upload a recording
+    
     func uploadRecording(_ recording: CallRecording) {
         guard let index = recordings.firstIndex(where: { $0.id == recording.id }) else { return }
         
-        // Update UI immediately
+       
         recordings[index].status = .uploading
         saveToLocalStorage()
         
-        // Then start the actual upload
+
         apiService.uploadRecording(recording)
             .receive(on: DispatchQueue.main)
             .sink(
@@ -453,13 +453,13 @@ class RecordingsViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    /// Remove a recording
+  
     func removeRecording(_ recording: CallRecording) {
         // Update UI immediately
         recordings.removeAll { $0.id == recording.id }
         saveToLocalStorage()
         
-        // Then call the API
+  
         apiService.deleteRecording(recording.id)
             .receive(on: DispatchQueue.main)
             .sink(
@@ -470,21 +470,21 @@ class RecordingsViewModel: ObservableObject {
                     }
                 },
                 receiveValue: { _ in
-                    // API call succeeded, already removed from UI
+                    
                 }
             )
             .store(in: &cancellables)
     }
     
-    /// Update recording description
+   
     func updateDescription(for recording: CallRecording, description: String) {
         guard let index = recordings.firstIndex(where: { $0.id == recording.id }) else { return }
         
-        // Update UI immediately
+        
         recordings[index].description = description
         saveToLocalStorage()
         
-        // Debounce API calls to avoid too many requests
+        
         let workItem = DispatchWorkItem { [weak self] in
             self?.apiService.updateRecordingDescription(recording.id, description: description)
                 .receive(on: DispatchQueue.main)
@@ -495,17 +495,17 @@ class RecordingsViewModel: ObservableObject {
                         }
                     },
                     receiveValue: { _ in
-                        // Already updated UI
+                        
                     }
                 )
                 .store(in: &self!.cancellables)
         }
         
-        // Cancel previous work item if exists
+     
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: workItem)
     }
     
-    /// Import a new recording
+   
     func importRecording(from url: URL) {
         let fileName = url.lastPathComponent
         let fileManager = FileManager.default
@@ -516,7 +516,7 @@ class RecordingsViewModel: ObservableObject {
             fileURL: url,
             fileSize: fileSize,
             importDate: Date(),
-            duration: 0.0, // In a real app, you'd analyze the audio file to get its duration
+            duration: 0.0,
             description: "",
             status: .pending
         )
@@ -527,7 +527,7 @@ class RecordingsViewModel: ObservableObject {
     
     // MARK: - Helper Methods
     
-    /// Format file size for display
+ 
     func formattedSize(_ size: Int64) -> String {
         ByteCountFormatter.string(fromByteCount: size, countStyle: .file)
     }

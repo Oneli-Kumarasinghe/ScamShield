@@ -3,6 +3,7 @@ import SwiftUI
 struct DashboardView: View {
     @StateObject private var viewModel = DashboardViewModel()
     @State private var selectedDate: Date = Date()
+    @State private var showBlockedNumbers = false
     @State private var isCalendarVisible = false
     @State private var searchText: String = ""
     @State private var navigateToDetails = false
@@ -89,6 +90,9 @@ struct DashboardView: View {
         .sheet(isPresented: $showAlertView) {
             AlertView()
         }
+        .sheet(isPresented: $showBlockedNumbers) {
+            BlockedNumbersView()
+        }
         .onAppear {
             setupNotificationObserver()
         }
@@ -141,7 +145,12 @@ struct DashboardView: View {
                                 }) {
                                     Image(systemName: "calendar")
                                 }
-                                Image(systemName: "bell")
+                                Button(action: {
+                                    showBlockedNumbers = true
+                                }) {
+                                    Image(systemName: "bell")
+                                }
+
                             }
                             .foregroundColor(.white)
                         }

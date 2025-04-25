@@ -66,7 +66,7 @@ class ReportingViewModel: ObservableObject {
         // Default theme
         self.theme = ThemeModel.standard
         
-        // Initialize with default report type (will be replaced when fetchReportTypes() completes)
+     
         let defaultReportType = ReportTypeModel(id: "harassment", name: "Harassment", systemImage: "exclamationmark.bubble")
         self.currentReport = ReportModel(reportType: defaultReportType)
         
