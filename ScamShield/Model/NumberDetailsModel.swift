@@ -96,7 +96,7 @@ class NumberDetailsViewModel: ObservableObject {
             return
         }
 
-        let sharedDefaults = UserDefaults(suiteName: "group.com.your.bundle") // Replace this with your App Group ID
+        let sharedDefaults = UserDefaults(suiteName: "group.com.your.bundle") 
         var blockedNumbers = sharedDefaults?.array(forKey: "BlockedNumbers") as? [Int64] ?? []
 
         if !blockedNumbers.contains(number) {
