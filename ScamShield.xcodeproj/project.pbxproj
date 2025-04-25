@@ -33,7 +33,6 @@
 		D50CAB3A2DB522A300D0C233 /* SriLankaEmergencyDialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB392DB522A300D0C233 /* SriLankaEmergencyDialModel.swift */; };
 		D50CAB3C2DB52B6100D0C233 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */; };
 		D51E96F32DB768CE003CAE49 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E96F22DB768CE003CAE49 /* TabIcon.swift */; };
-		D53AF7EA2DBC181700238187 /* BlockedNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53AF7E92DBC181700238187 /* BlockedNumbersView.swift */; };
 		D5FB83842DB9EF6900D4A60B /* BlockerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FB83832DB9EF6900D4A60B /* BlockerExtension.swift */; };
 		D5FB83882DB9EF6900D4A60B /* MyAppCallDirectory.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -107,7 +106,6 @@
 		D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D51E96F22DB768CE003CAE49 /* TabIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIcon.swift; sourceTree = "<group>"; };
 		D53AF7E82DBBEA4900238187 /* MyAppCallDirectory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyAppCallDirectory.entitlements; sourceTree = "<group>"; };
-		D53AF7E92DBC181700238187 /* BlockedNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedNumbersView.swift; sourceTree = "<group>"; };
 		D5FB83812DB9EF6800D4A60B /* MyAppCallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyAppCallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FB83832DB9EF6900D4A60B /* BlockerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerExtension.swift; sourceTree = "<group>"; };
 		D5FB83852DB9EF6900D4A60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 				D50CAB332DB4DF5400D0C233 /* NumberDetailsView.swift */,
 				D50CAB372DB5225400D0C233 /* SriLankaEmergencyDialView.swift */,
 				D50CAB3B2DB52B6100D0C233 /* ProfileView.swift */,
-				D53AF7E92DBC181700238187 /* BlockedNumbersView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,7 +420,6 @@
 				D50CAB222DB3E08800D0C233 /* DashboardView.swift in Sources */,
 				D50CAB1E2DB3DEDC00D0C233 /* SignUpModel.swift in Sources */,
 				D50CAB3C2DB52B6100D0C233 /* ProfileView.swift in Sources */,
-				D53AF7EA2DBC181700238187 /* BlockedNumbersView.swift in Sources */,
 				D50CAB2C2DB3FD0A00D0C233 /* RecordModel.swift in Sources */,
 				D50CAB342DB4DF5400D0C233 /* NumberDetailsView.swift in Sources */,
 				D50CAB382DB5225400D0C233 /* SriLankaEmergencyDialView.swift in Sources */,

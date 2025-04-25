@@ -206,6 +206,31 @@ struct NumberDetailsView: View {
                 .shadow(radius: 5)
                 .padding()
             }
+            
+            // Block status toast notification
+            if viewModel.showBlockStatus, let message = viewModel.blockStatusMessage {
+                VStack {
+                    Spacer()
+                    
+                    Text(message)
+                        .padding()
+                        .background(Color(.systemBackground))
+                        .cornerRadius(10)
+                        .shadow(radius: 3)
+                        .padding(.bottom, 20)
+                        .transition(.move(edge: .bottom))
+                        .onAppear {
+                            // Auto dismiss after 3 seconds
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                withAnimation {
+                                    viewModel.showBlockStatus = false
+                                }
+                            }
+                        }
+                }
+                .animation(.easeInOut, value: viewModel.showBlockStatus)
+                .zIndex(2)
+            }
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Number Details")
@@ -236,9 +261,19 @@ struct NumberDetailsView: View {
             ReportFormView(viewModel: ReportFormViewModel(phoneNumber: viewModel.phoneNumber))
         }
         .onAppear {
-           
-            viewModel.loadData()
+           viewModel.loadData()
         }
+        // Alternative: Alert style notification
+        // .alert(isPresented: $viewModel.showBlockStatus, content: {
+        //     Alert(
+        //         title: Text("Block Status"),
+        //         message: Text(viewModel.blockStatusMessage ?? ""),
+        //         dismissButton: .default(Text("OK")) {
+        //             viewModel.showBlockStatus = false
+        //             viewModel.blockStatusMessage = nil
+        //         }
+        //     )
+        // })
     }
 }
 

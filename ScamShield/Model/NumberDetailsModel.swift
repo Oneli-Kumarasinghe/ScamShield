@@ -2,7 +2,7 @@ import Foundation
 import CallKit
 import Combine
 
-// MARK: - Existing Model Used by Views (RE-ADDED)
+// MARK: - Existing Model Used by Views
 struct PhoneNumberReport: Identifiable {
     let id = UUID()
     let phoneNumber: String
@@ -27,6 +27,8 @@ class NumberDetailsViewModel: ObservableObject {
     @Published var numberInformation: NumberInformation?
     @Published var isLoading = false
     @Published var errorMessage: String?
+    @Published var blockStatusMessage: String?
+    @Published var showBlockStatus: Bool = false
 
     private var cancellables = Set<AnyCancellable>()
 
@@ -92,7 +94,8 @@ class NumberDetailsViewModel: ObservableObject {
         let cleanedNumber = phoneNumber.filter("0123456789".contains)
 
         guard let number = Int64(cleanedNumber) else {
-            print("Invalid phone number format")
+            blockStatusMessage = "Invalid phone number format"
+            showBlockStatus = true
             return
         }
 
@@ -102,20 +105,24 @@ class NumberDetailsViewModel: ObservableObject {
         if !blockedNumbers.contains(number) {
             blockedNumbers.append(number)
             sharedDefaults?.set(blockedNumbers, forKey: "BlockedNumbers")
-            print("Number added to blocked list.")
+            blockStatusMessage = "Number added to blocked list."
         } else {
-            print("Number already blocked.")
+            blockStatusMessage = "Number already blocked."
         }
+        
+        showBlockStatus = true
 
         CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "T.ScamShield.MyAppCallDirectory") { error in
-            if let error = error {
-                print("Error reloading extension: \(error.localizedDescription)")
-            } else {
-                print("Call directory extension reloaded successfully")
+            DispatchQueue.main.async {
+                if let error = error {
+                    self.blockStatusMessage = "Error reloading extension: \(error.localizedDescription)"
+                    self.showBlockStatus = true
+                } else {
+                    // We don't need to update the message here as it's already set above
+                }
             }
         }
     }
-
 
     private func generateMockSpamActivity() -> [SpamActivity] {
         let calendar = Calendar.current
@@ -124,11 +131,9 @@ class NumberDetailsViewModel: ObservableObject {
             SpamActivity(date: calendar.date(byAdding: .day, value: -offset, to: today)!, reportCount: Int.random(in: 0...3))
         }.reversed()
     }
-
 }
 
-
-// MARK: - ViewModel for Report Submission (RE-ADDED)
+// MARK: - ViewModel for Report Submission
 class ReportFormViewModel: ObservableObject {
     let phoneNumber: String
     @Published var reportType: String = "Spam"
@@ -147,8 +152,6 @@ class ReportFormViewModel: ObservableObject {
     }
 }
 
-
-
 // MARK: - API Response Struct
 struct NumberDetailsResponse: Codable {
     let number: String
@@ -156,7 +159,7 @@ struct NumberDetailsResponse: Codable {
     let no_of_times_reported: Int
 }
 
-// MARK: - Supporting Models (if not already defined)
+// MARK: - Supporting Models
 struct SpamActivity {
     let date: Date
     let reportCount: Int
