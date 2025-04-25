@@ -31,7 +31,7 @@ class LoginViewModel: ObservableObject {
     // MARK: - Login Actions
     
     func login() {
-        guard let url = URL(string: "http://169.254.95.2:3000/login") else {
+        guard let url = URL(string: "http://169.254.98.229:3000/login") else {
             self.errorMessage = "Invalid login URL"
             return
         }
