@@ -1,0 +1,17 @@
+[
+    {
+      "username": "testuser",
+      "email": "test@example.com",
+      "phone": "1234567890",
+      "location": "Colombo",
+      "password": "testpass",
+      "reportedCalls": [
+        {
+          "number": "+94 0715645376",
+          "reason": "Recruitment Harassment",
+          "date": "2025-04-25T08:30:00.000Z"
+        }
+      ]
+    }
+  ]
+  
